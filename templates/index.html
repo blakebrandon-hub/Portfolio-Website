@@ -89,37 +89,31 @@
 }
 
 .nav-item {
-    padding: 8px 10px; /* Spacing for clickable area */
+    padding: 8px 10px;
     text-align: center;
 }
 
 .nav-link {
-    font-size: 18px; /* Readable size on smaller screens */
+    font-size: 18px;
     color: ghostwhite;
 }
 
 .nav-link:hover {
-    color: #f8f9fa; /* Hover effect for links */
+    color: #f8f9fa;
 }
 
 .navbar-toggler {
-    border: none;
+    display: none; /* Hide the toggle button if not using collapse */
 }
 
-/* Navbar adjustments for mobile screens */
+/* Ensure side-by-side links on all screen sizes */
 @media (max-width: 768px) {
-    .navbar-collapse {
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
+    .navbar-nav {
+        flex-direction: row; /* Keep links side-by-side on mobile */
+        justify-content: center;
         width: 100%;
     }
-    .navbar-nav {
-        flex-direction: column;
-    }
 }
-
-
 
 </style>
 
