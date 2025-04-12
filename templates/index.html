@@ -19,337 +19,309 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
- 
 
-<header>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <div class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
 
-<a class="navbar-brand fw-bold" href="#" style="color: ghostwhite; font-size: 1.5rem; font-family: 'Montserrat', sans-serif;">
+                <a class="navbar-brand fw-bold" href="#" style="color: ghostwhite; font-size: 1.5rem; font-family: 'Montserrat', sans-serif;">
   Blake Brandon's Portfolio
-</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-  <span class="navbar-toggler-icon"></span>
-</button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/blake-e-brandon/" target="_blank" style="font-size: 1.5rem; width: auto;">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mailto:blakebrandon.dev@gmail.com" style="font-size: 1.5rem; width: auto;">
-              <i class="fas fa-envelope"></i> Email
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/blakebrandon-hub" target="_blank" style="font-size: 1.5rem; width: auto;">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('static', filename='Blake_Brandon_Resume.pdf') }}" target="_blank" style="font-size: 20px;">
-            <i class="fas fa-file-alt"></i> Resume
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<div id="intro" class="container py-4 my-5 text-dark">
-
-<p style="font-family: 'Montserrat', sans-serif, serif; width: 100%; font-size: 1.5rem;"><strong>About Me</strong></p>
-  
-  <p class="lead mt-2"; width: 100%; style="font-size: 1rem;">
-    Passionate software developer with a focus on Python and backend web development. I’ve independently built and deployed a number of projects including a real-time music platform, developer Q&A site, and an online shop with Stripe integration. These projects strengthened my skills in building backend systems, connecting APIs, and delivering functional, full-stack applications. 
-
-  </p>
-
-  <p class="lead mt-2" width: 100%; style="font-size: 1rem;">
-    Proficient in Flask and Django, with experience deploying to Heroku and AWS. Based in Brooklyn and actively seeking a junior developer role where I can contribute to real projects and keep building my skills. 
-  </p>
-
-<p style="font-family: 'Montserrat', sans-serif; width: 100%; font-size: 1.5rem;"><strong>Technical Skills</strong></p>
-
-   <p class="lead mt-2" width: 100%; style="font-size: 1rem;">
-    Python, JavaScript, HTML, CSS, Flask, Django, Node.js, Bootstrap, SQL, Git, Heroku, AWS (basic), Docker (basic), RESTful APIs, Websockets
-  </p>   
-
-    <p class="lead mt-2" style="width: 100%; font-size: 1rem; text-align: left; padding-top: 2%;">See more of my projects on <a href="https://github.com/blakebrandon-hub" target="_blank">GitHub</a>, including a project management tool, content aggregator, and selection sort visualizer.</p>
-
-</div>
-
-<style>
-
-.img-fluid project-image{
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-.card {
-  height: auto !important;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Navbar Styles */
-.navbar {
-    background-color: #343a40;
-}
-
-.navbar-brand {
-    color: ghostwhite;
-    text-align: center;
-}
-
-.navbar-nav {
-    width: 100%;
-    text-align: center;
-}
-
-
-.nav-item {
-    padding: 8px 10px;
-    text-align: center;
-}
-
-.nav-link {
-    color: ghostwhite;
-}
-
-.nav-link:hover {
-    color: #f8f9fa;
-}
-
-.navbar-toggler {
-  display: block;
-}
+</a
     
-    img {
-        padding-top: 10%;
-    }
-}
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-</style>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/blake-e-brandon/" target="_blank" style="font-size: 1.5rem; width: auto;">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:blakebrandon.dev@gmail.com" style="font-size: 1.5rem; width: auto;">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/blakebrandon-hub" target="_blank" style="font-size: 1.5rem; width: auto;">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('static', filename='Blake_Brandon_Resume.pdf') }}" target="_blank" style="font-size: 20px;">
+                                <i class="fas fa-file-alt"></i> Resume
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!--Main Navigation-->
+    <div id="intro" class="container py-4 my-5 text-dark">
 
-  <!--Main layout-->
-  <main class="my-5">
-    <div class="container">
-      <!--Section: Content-->
-      <section class="text-center">
+        <p style="font-family: 'Montserrat', sans-serif, serif; width: 100%; font-size: 1.5rem;"><strong>About Me</strong></p>
+
+        <p class="lead mt-2" ; width: 100%; style="font-size: 1rem;">
+            Passionate software developer with a focus on Python and backend web development. I’ve independently built and deployed a number of projects including a real-time music platform, developer Q&A site, and an online shop with Stripe integration. These projects
+            strengthened my skills in building backend systems, connecting APIs, and delivering functional, full-stack applications.
+        </p>
+
+        <p class="lead mt-2" width: 100%; style="font-size: 1rem;">
+            Proficient in Flask and Django, with experience deploying to Heroku and AWS. Based in Brooklyn and actively seeking a junior developer role where I can contribute to real projects and keep building my skills.
+        </p>
+
+        <p style="font-family: 'Montserrat', sans-serif; width: 100%; font-size: 1.5rem;"><strong>Technical Skills</strong></p>
+
+        <p class="lead mt-2" width: 100%; style="font-size: 1rem;">
+            Python, JavaScript, HTML, CSS, Flask, Django, Node.js, Bootstrap, SQL, Git, Heroku, AWS (basic), Docker (basic), RESTful APIs, Websockets
+        </p>
+
+        <p class="lead mt-2" style="width: 100%; font-size: 1rem; text-align: left; padding-top: 2%;">See more of my projects on <a href="https://github.com/blakebrandon-hub" target="_blank">GitHub</a>, including a project management tool, content aggregator, and selection sort visualizer.</p>
+
+    </div>
+
+    <style>
+        .img-fluid project-image{
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          display: block;
+        }
         
-
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4" >
-            <div class="card" style="width: 100%; height: 35%; padding-bottom: 4%;">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <a ref="https://groovehub-1d4997d3b5cb.herokuapp.com/"><img src="static/images/groove2.jpg" class="img-fluid project-image"></a>
-
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-              </div>
-              <div class="card-body" style="text-align: center;">
-                <h4 class="card-title";>Groove Hub</h4>
-                <p class="card-text">
-                  <p style="text-align: left;">Groove Hub is a chatroom where you can share music from YouTube, build collaborative playlists, and enjoy watching and listening with others in real-time. </p>
-                  <a href="https://github.com/blakebrandon-hub/Groove-Hub-Chat" class="btn btn-primary" style="margin-right: 5%;">Code</a> <a href="https://groovehub-1d4997d3b5cb.herokuapp.com/" class="btn btn-primary">Live Demo</a>
-                           
-    
-            </div>
-
-          </div>
-
-
-
-          <br>  
-
-                                  <h5 style="float: left; padding-top: 5%;">Skills Demonstrated: </h5>
-          <br>
-          <ul>
-            <li style="float: left; text-align: left;"><b>Flask Framework</b>: Used to build the backend of the application.</li><br>
-            <li style="float: left; text-align: left;"><b>Flask-SocketIO</b>: For real-time communication between clients and video sync.</li>
-            <li style="float: left; text-align: left;"><b>Python</b>: Core language for backend logic, managing the video queue, chat, and real-time updates.</li>
-            <li style="float: left; text-align: left;"><b>JavaScript</b>: Frontend functionality, including handling the video queue, autoplay, and user interactions.</li>
-            <li style="float: left; text-align: left;"><b>Use of External APIs</b>: Integrated the YouTube iframe API and YouTube Data API to embed and control YouTube videos.</li>
-            <li style="float: left; text-align: left;"><b>HTML/CSS</b>: For structuring and styling the web application, including layout adjustments for mobile and desktop views.</li>  
-          </ul>
-
-            <h5 style="float: left; padding-top: 10%;">Challenges and Solutions: </h5>
-          <br>
-         <ul> 
+        .card {
+          height: auto !important;
+        }
+        
+        body {
+          font-family: 'Roboto', sans-serif;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: #343a40;
+        }
+        
+        .navbar-brand {
+            color: ghostwhite;
+            text-align: center;
+        }
+        
+        .navbar-nav {
+            width: 100%;
+            text-align: center;
+        }
+        
+        
+        .nav-item {
+            padding: 8px 10px;
+            text-align: center;
+        }
+        
+        .nav-link {
+            color: ghostwhite;
+        }
+        
+        .nav-link:hover {
+            color: #f8f9fa;
+        }
+        
+        .navbar-toggler {
+          display: block;
+        }
             
-            <li style="float: left; text-align: left;"><b>Challenge</b>: Keeping multiple users' videos in sync was essential for a seamless collaborative experience, especially with varying connection speeds and potential delays.
-            </li><br>
-            <li style="float: left; text-align: left; style=padding-bottom: 25%"><b>Solution</b>: Implementing Flask-SocketIO for real-time communication, allowing users to stay in sync. To reduce lag, I created a feature that queues the next video before the current one ends, minimizing delays. To test these features, I built a small online community on Facebook with about 20 members who actively engaged, helping fine-tune the experience.
-            </li>    
+            img {
+                padding-top: 10%;
+            }
+        }
+    </style>
 
-            <br>
-
-            <!-- Padding DIV -->
-           
-          </ul>
-            
-
-        </div>
-
-          <div class="col-lg-4 col-md-6 mb-4" >
-            <div class="card" style="max-width: 100%; height: 35%;">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="static/images/heap.jpg" class="img-fluid project-image";>
-
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-
-              </div>
-              <div class="card-body">
-                <h4 class="card-title";>Heap Overflow</h4>
-                <p class="card-text">
-                  <p style="text-align: left;">Heap Overflow is a Q&A website for software and development, where users can authenticate to ask questions, answer them, or follow specific topics.</p>
-                  <a href="https://github.com/blakebrandon-hub/Heap-Overflow" class="btn btn-primary" style="margin-right: 5%;">Code</a> <a href="https://heap-overflow-a923010546c2.herokuapp.com/" class="btn btn-primary">Live Demo</a>
-                      
-              </p>
-                
-              </div>
-            </div>
-
-            <br>
-
-            <h5 style="float: left; padding-top: 5%;">Skills Demonstrated: </h5>
-
-          <ul>
-            <li style="float: left; text-align: left;"><b>Django</b>: Web framework for creating the application, managing models, views, and templates.</li><br>
-            <li style="float: left; text-align: left;"><b>User Authentication</b>: Implementing user registration, login, and logout features.</li>
-            <li style="float: left; text-align: left;"><b>CRUD Operations</b>: Implementing create, read, update, delete functionality for posts and comments.</li>
-            <li style="float: left; text-align: left;"><b>Search Functionality</b>: Enabling users to search for questions or topics.</li>
-            <li style="float: left; text-align: left;"><b>Model Relationships</b>: Setting up models for questions, answers, and user profiles, and managing relationships between them.</li>
-            <li style="float: left; text-align: left;"><b>Bootstrap</b>: For responsive UI components and styling.</li>
-          
-          </ul>
-<h5 style="float: left; padding-top: 10%;">Challenges and Solutions: </h5>
-            <br>
- 
-          <ul>
-            
-            <li style="float: left; text-align: left;"><b>Challenge</b>: Managing user authentication securely to ensure only registered users could access, ask, and answer questions, while creating enough content to demonstrate the platform's potential.
-            </li>
-            <li style="float: left; text-align: left; padding-bottom: 10%;"><b>Solution</b>: I implemented Django's authentication system, allowing users to log in, register, and access features such as posting and responding to questions. Additionally, I generated realistic sample data to effectively showcase the platform’s functionality, providing users with relevant examples to engage with.
-            </li>
+    <!--Main layout-->
+    <main class="my-5">
+        <div class="container">
+            <!--Section: Content-->
+            <section class="text-center">
 
 
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="card" style="width: 100%; height: 35%; padding-bottom: 4%;">
+                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                <a ref="https://groovehub-1d4997d3b5cb.herokuapp.com/"><img src="static/images/groove2.jpg" class="img-fluid project-image"></a>
 
-          </div>
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </a>
+                            </div>
+                            <div class="card-body" style="text-align: center;">
+                                <h4 class="card-title" ;>Groove Hub</h4>
+                                <p class="card-text">
+                                    <p style="text-align: left;">Groove Hub is a chatroom where you can share music from YouTube, build collaborative playlists, and enjoy watching and listening with others in real-time. </p>
+                                    <a href="https://github.com/blakebrandon-hub/Groove-Hub-Chat" class="btn btn-primary" style="margin-right: 5%;">Code</a> <a href="https://groovehub-1d4997d3b5cb.herokuapp.com/" class="btn btn-primary">Live Demo</a>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card" style="max-width: 100%; height: 35%;">
-              <div class="bg-image hover-overlay ripple" data-db-ripple-color="light">
-                <img src="static/images/ecommerce.jpg" class="img-fluid project-image">
+                            </div>
 
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </div>
 
-              </div>
-              <div class="card-body">
-                <h4 class="card-title";>Online Shop</h4>
-                <p class="card-text">
-                  <p style="float: left; text-align: left;">
+                        <br>
 
-This project integrates Stripe Checkout, offering a secure and efficient payment gateway. The user-friendly interface allows customers to easily purchase products.</p>
-                  <a href="https://github.com/blakebrandon-hub/Simple-Shop" class="btn btn-primary" style="margin-right: 5%;">Code</a> <a href="https://online-shop-example-805474abb1a5.herokuapp.com/" class="btn btn-primary">Live Demo</a>
- 
-                
+                        <h5 style="float: left; padding-top: 5%;">Skills Demonstrated: </h5>
+                        <br>
+                        <ul>
+                            <li style="float: left; text-align: left;"><b>Flask Framework</b>: Used to build the backend of the application.</li>
+                            <br>
+                            <li style="float: left; text-align: left;"><b>Flask-SocketIO</b>: For real-time communication between clients and video sync.</li>
+                            <li style="float: left; text-align: left;"><b>Python</b>: Core language for backend logic, managing the video queue, chat, and real-time updates.</li>
+                            <li style="float: left; text-align: left;"><b>JavaScript</b>: Frontend functionality, including handling the video queue, autoplay, and user interactions.</li>
+                            <li style="float: left; text-align: left;"><b>Use of External APIs</b>: Integrated the YouTube iframe API and YouTube Data API to embed and control YouTube videos.</li>
+                            <li style="float: left; text-align: left;"><b>HTML/CSS</b>: For structuring and styling the web application, including layout adjustments for mobile and desktop views.</li>
+                        </ul>
 
-              </p>
-              </div>
-            </div>
+                        <h5 style="float: left; padding-top: 10%;">Challenges and Solutions: </h5>
+                        <br>
+                        <ul>
 
-            <br>
+                            <li style="float: left; text-align: left;"><b>Challenge</b>: Keeping multiple users' videos in sync was essential for a seamless collaborative experience, especially with varying connection speeds and potential delays.
+                            </li>
+                            <br>
+                            <li style="float: left; text-align: left; style=padding-bottom: 25%"><b>Solution</b>: Implementing Flask-SocketIO for real-time communication, allowing users to stay in sync. To reduce lag, I created a feature that queues the next video before the current one ends, minimizing delays. To test
+                                these features, I built a small online community on Facebook with about 20 members who actively engaged, helping fine-tune the experience.
+                            </li>
 
-            <h5 style="text-align: left; padding-top: 5%;">Skills Demonstrated: </h5>
+                            <br>
 
-          <ul style="">
-            <li style="text-align: left;"><b>Django Development</b>: Used Django as the core framework to build the backend</li>
-            <li style="text-align: left;"><b>Stripe API Integration</b>: Implemented secure payments via Stripe Checkout
-</li><br>
+                        </ul>
 
-          </ul>
+                    </div>
 
-         
-<h5 style="float: left;">Challenges and Solutions: </h5>
-                    <ul>
-            
-            <li style="float: left; text-align: left;"><b>Challenge</b>: Challenge: Implementing a secure, reliable payment system to handle transactions safely, especially given the sensitive nature of payment information.
-            </li>
-            <li style="float: left; text-align: left;"><b>Solution</b>:  I integrated Stripe Checkout, which provided a secure, PCI-compliant way to manage payments. Leveraging Stripe’s security features ensured a trustworthy payment experience without handling credit card information directly, meeting industry compliance standards effectively.
-            </li>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="max-width: 100%; height: 35%;">
+                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                <img src="static/images/heap.jpg" class="img-fluid project-image" ;>
 
-          </ul>
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title" ;>Heap Overflow</h4>
+                                <p class="card-text">
+                                    <p style="text-align: left;">Heap Overflow is a Q&A website for software and development, where users can authenticate to ask questions, answer them, or follow specific topics.</p>
+                                    <a href="https://github.com/blakebrandon-hub/Heap-Overflow" class="btn btn-primary" style="margin-right: 5%;">Code</a> <a href="https://heap-overflow-a923010546c2.herokuapp.com/" class="btn btn-primary">Live Demo</a>
+
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <h5 style="float: left; padding-top: 5%;">Skills Demonstrated: </h5>
+
+                        <ul>
+                            <li style="float: left; text-align: left;"><b>Django</b>: Web framework for creating the application, managing models, views, and templates.</li>
+                            <br>
+                            <li style="float: left; text-align: left;"><b>User Authentication</b>: Implementing user registration, login, and logout features.</li>
+                            <li style="float: left; text-align: left;"><b>CRUD Operations</b>: Implementing create, read, update, delete functionality for posts and comments.</li>
+                            <li style="float: left; text-align: left;"><b>Search Functionality</b>: Enabling users to search for questions or topics.</li>
+                            <li style="float: left; text-align: left;"><b>Model Relationships</b>: Setting up models for questions, answers, and user profiles, and managing relationships between them.</li>
+                            <li style="float: left; text-align: left;"><b>Bootstrap</b>: For responsive UI components and styling.</li>
+
+                        </ul>
+                        <h5 style="float: left; padding-top: 10%;">Challenges and Solutions: </h5>
+                        <br>
+
+                        <ul>
+
+                            <li style="float: left; text-align: left;"><b>Challenge</b>: Managing user authentication securely to ensure only registered users could access, ask, and answer questions, while creating enough content to demonstrate the platform's potential.
+                            </li>
+                            <li style="float: left; text-align: left; padding-bottom: 10%;"><b>Solution</b>: I implemented Django's authentication system, allowing users to log in, register, and access features such as posting and responding to questions. Additionally, I generated realistic sample data to effectively
+                                showcase the platform’s functionality, providing users with relevant examples to engage with.
+                            </li>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="max-width: 100%; height: 35%;">
+                            <div class="bg-image hover-overlay ripple" data-db-ripple-color="light">
+                                <img src="static/images/ecommerce.jpg" class="img-fluid project-image">
+
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title" ;>Online Shop</h4>
+                                <p class="card-text">
+                                    <p style="float: left; text-align: left;">
+
+                                        This project integrates Stripe Checkout, offering a secure and efficient payment gateway. The user-friendly interface allows customers to easily purchase products.</p>
+                                    <a href="https://github.com/blakebrandon-hub/Simple-Shop" class="btn btn-primary" style="margin-right: 5%;">Code</a> <a href="https://online-shop-example-805474abb1a5.herokuapp.com/" class="btn btn-primary">Live Demo</a>
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <h5 style="text-align: left; padding-top: 5%;">Skills Demonstrated: </h5>
+
+                        <ul style="">
+                            <li style="text-align: left;"><b>Django Development</b>: Used Django as the core framework to build the backend</li>
+                            <li style="text-align: left;"><b>Stripe API Integration</b>: Implemented secure payments via Stripe Checkout
+                            </li>
+                            <br>
+
+                        </ul>
 
 
-          </div>
+                        <h5 style="float: left;">Challenges and Solutions: </h5>
+                        <ul>
 
-            
-          <div id="certs" style="text-align: left; padding-bottom: 7%; padding-top: 5%;">
-            <h5>Certifications</h5>
-            <ul>
-              <li><strong>AWS Cloud Practitioner</strong> – Demonstrates foundational knowledge of AWS cloud concepts, services, and solutions. Validates your understanding of core cloud technologies and architecture.</li>
-            </ul>
-            <h5>Courses</h5>
-            <ul>
-              <li><strong>Python Data Structures & Algorithms</strong> – Comprehensive course covering essential data structures and algorithmic strategies in Python, enhancing problem-solving skills.</li>
-              <li><strong>Python OOP: Object-Oriented Programming in Python</strong> – Focused on the fundamentals and practical applications of OOP, highlighting your understanding of structured programming and Python’s object-oriented capabilities.</li>
-            </ul>
-            <h5>Leetcode</h5>
-            <ul>
-              <li><strong>65 Problems Solved</strong> – Dedicated practice in coding challenges across various topics, showcasing persistence and skill in data structures, algorithms, and problem-solving.</li>
-            </ul>
-          </div>
+                            <li style="float: left; text-align: left;"><b>Challenge</b>: Challenge: Implementing a secure, reliable payment system to handle transactions safely, especially given the sensitive nature of payment information.
+                            </li>
+                            <li style="float: left; text-align: left;"><b>Solution</b>: I integrated Stripe Checkout, which provided a secure, PCI-compliant way to manage payments. Leveraging Stripe’s security features ensured a trustworthy payment experience without handling credit card information
+                                directly, meeting industry compliance standards effectively.
+                            </li>
+
+                        </ul>
 
 
+                    </div>
 
-        </div>        
 
-      </section>
-      <!--Section: Content-->
+                    <div id="certs" style="text-align: left; padding-bottom: 7%; padding-top: 5%;">
+                        <h5>Certifications</h5>
+                        <ul>
+                            <li><strong>AWS Cloud Practitioner</strong> – Demonstrates foundational knowledge of AWS cloud concepts, services, and solutions. Validates your understanding of core cloud technologies and architecture.</li>
+                        </ul>
+                        <h5>Courses</h5>
+                        <ul>
+                            <li><strong>Python Data Structures & Algorithms</strong> – Comprehensive course covering essential data structures and algorithmic strategies in Python, enhancing problem-solving skills.</li>
+                            <li><strong>Python OOP: Object-Oriented Programming in Python</strong> – Focused on the fundamentals and practical applications of OOP, highlighting your understanding of structured programming and Python’s object-oriented capabilities.</li>
+                        </ul>
+                        <h5>Leetcode</h5>
+                        <ul>
+                            <li><strong>65 Problems Solved</strong> – Dedicated practice in coding challenges across various topics, showcasing persistence and skill in data structures, algorithms, and problem-solving.</li>
+                        </ul>
+                    </div>
 
-      <!-- Pagination 
-      <nav class="my-4" aria-label="...">
-        <ul class="pagination pagination-circle justify-content-center">
-          <li class="page-item">
-            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item active" aria-current="page">
-            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#">Next</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </main>-->
-  <!--Main layout-->
+                </div>
 
-<footer class="bg-dark text-white text-center p-3" style="width: 100%;">
+            </section>
 
-    <p>Blake Brandon © 2025 | <a href="https://linkedin.com" target="_blank" class="text-white">LinkedIn</a> | <a href='mailto:blakebrandon.dev@gmail.com' target="_blank" class="text-white">Email</a> | <a href="https://github.com/blakebrandon-hub" target="_blank" class="text-white">GitHub</a> | <a href="{{ url_for('static', filename='Blake_Brandon_Resume.pdf') }}" target="_blank" class="text-white">Resume</a></p>
-</footer>
 
-    <!-- Custom scripts -->
-    <script type="text/javascript" src='static/js/script.js'></script>
-    <!-- Bootstrap 5 Bundle JS (for navbar toggle) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <footer class="bg-dark text-white text-center p-3" style="width: 100%;">
+
+                <p>Blake Brandon © 2025 | <a href="https://linkedin.com" target="_blank" class="text-white">LinkedIn</a> | <a href='mailto:blakebrandon.dev@gmail.com' target="_blank" class="text-white">Email</a> | <a href="https://github.com/blakebrandon-hub"
+                    target="_blank" class="text-white">GitHub</a> | <a href="{{ url_for('static', filename='Blake_Brandon_Resume.pdf') }}" target="_blank" class="text-white">Resume</a></p>
+            </footer>
+
+            <!-- Custom scripts -->
+            <script type="text/javascript" src='static/js/script.js'></script>
+            <!-- Bootstrap 5 Bundle JS (for navbar toggle) -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
