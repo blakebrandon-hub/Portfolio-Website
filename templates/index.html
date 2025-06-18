@@ -229,14 +229,29 @@ img {
 
         </div>
 
-          <div class="col-lg-4 col-md-6 mb-4" >
-            <div class="card" style="max-width: 100%; height: 35%;">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="static/images/heap.jpg" class="img-fluid project-image";>
-
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-
-              </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card" style="max-width: 100%; height: 35%;">
+                
+                <!-- Bootstrap Carousel -->
+                <div id="crmCarousel" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="static/images/heap.jpg" class="d-block w-100 project-image" alt="Heap Overflow Screenshot 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="static/images/heap2.jpg" class="d-block w-100 project-image" alt="Heap Overflow Screenshot 2">
+                    </div>
+                  </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#crmCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 50%; width: 2.5rem; height: 2.5rem;"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#crmCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 50%; width: 2.5rem; height: 2.5rem;"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                  
               <div class="card-body">
                 <h4 class="card-title";>Heap Overflow</h4>
                 <p class="card-text">
