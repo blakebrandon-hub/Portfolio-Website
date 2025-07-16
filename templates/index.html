@@ -222,21 +222,23 @@ img {
   <br>
 
   <h5 style="text-align: left; padding-top: 5%;">Skills Demonstrated:</h5>
-  <ul>
-    <li style="text-align: left;"><b>Django</b>: Built views, models, forms, and user authentication for role-based access.</li>
-    <li style="text-align: left;"><b>Mailgun Integration</b>: Automated email sending with support for custom templates.</li>
-    <li style="text-align: left;"><b>Heroku Scheduler</b>: Triggers daily background tasks for email automation and campaign progression.</li>
-    <li style="text-align: left;"><b>Email Template & Scheduling System</b>: Users can create reusable email templates and schedule sends based on birthdays, anniversaries (from the database), or custom dates.</li>
-    <li style="text-align: left;"><b>Offline-to-Database Flow</b>: Built a pipeline to upload .docx forms collected offline and parse them into the database.</li>
-    <li style="text-align: left;"><b>Client Intake System</b>: Designed a detailed intake form with over 140 fields to capture comprehensive client data.</li>
-    <li style="text-align: left;"><b>Pagination & Filtering</b>: Developed search and filter functionality for large client datasets.</li>
-    <li style="text-align: left;"><b>Bootstrap 5</b>: Responsive UI for form pages, dashboards, and mobile views.</li>
-  </ul>
+<ul>
+  <li><strong>Flask</strong>: Designed custom logic for turn-based video queues and real-time state management.</li>
+  <li><strong>WebSockets</strong>: Built synchronized chat and video playback using Flask-SocketIO.</li>
+  
+  <li><strong>YouTube IFrame API</strong>: Controlled embedded video playback dynamically with JavaScript.</li>
+  <li><strong>Frontend-Backend Sync</strong>: Maintained consistent "Now Playing" and playback time across all users.</li>
+  <li><strong>Responsive UI Development</strong>: Created a mobile-friendly layout with tabbed chat/queue and embedded video.</li>
+  <li><strong>Deployment & Debugging on Heroku</strong>: Deployed the full-stack app and resolved real-time sync and video playback errors.</li>
+  <li><strong>Client-Side Event Handling</strong>: Used JavaScript to handle video events (play, pause, end) and emit updates to the server in real time.</li>
+  <li><strong>User Experience Design</strong>: Iterated on features like chat history, username prompts, and manual resync to improve usability during live sessions.</li>
+</ul>
+
 
   <h5 style="text-align: left;">Challenges and Solutions:</h5>
   <ul>
-    <li style="text-align: left;"><b>Challenge</b>: Supporting offline data collection in the field.</li>
-    <li style="text-align: left;"><b>Solution</b>: Built an upload system to parse structured offline form data into the database.</li>
+    <li style="text-align: left;"><b>Challenge</b>: Syncing playback across all users in real time</strong>: Playback would often drift between clients.</li>
+    <li style="text-align: left;"><b>Solution</b>: Used Flask-SocketIO events to broadcast state updates and implemented a manual resync button for users to realign playback when needed.</li>
   </ul>
 </div>
 
