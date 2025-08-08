@@ -132,66 +132,8 @@ img {
       <section class="text-center">
         
         <div class="row">
-
-
-
-        <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card" style="max-width: 100%;">
-                
-                <!-- Bootstrap Carousel -->
-                <div id="speakCarousel" class="carousel slide">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="static/images/speak.jpg" class="d-block w-100 project-image" alt="ObjectSpeak Screenshot 1">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="static/images/speak2.jpg" class="d-block w-100 project-image" alt="ObjectSpeak Screenshot 2">
-                    </div>
-                  </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#speakCarousel" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 50%; width: 2.5rem; height: 2.5rem;"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#speakCarousel" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 50%; width: 2.5rem; height: 2.5rem;"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                  
-              <div class="card-body" style="text-align: center;">
-                <h4 class="card-title";>ObjectSpeak</h4>
-                <p class="card-text">
-                  <p style="text-align: left;">A browser-based application that uses your device’s camera to detect objects in real time and say their names out loud.</p>
-                  <a href="https://github.com/blakebrandon-hub/ObjectSpeak" class="btn btn-primary" style="margin-right: 5%;">Code</a> <a href="https://objectspeak-944527724a5d.herokuapp.com/" class="btn btn-primary">Live Demo</a>
-                           
-            </div>
-
-          </div>
-
-          <br>  
-
-          <h5 style="float: left; padding-top: 5%;">Skills Demonstrated: </h5>
-          <br>
-          <ul>
-            <li style="float: left; text-align: left;"><b>Flask</b>: Used Python and Flask to deliver the frontend with minimal overhead.</li>
-            <li style="float: left; text-align: left;"><b>Object Detection</b>: Implemented real-time object recognition in the browser using a pre-trained COCO-SSD model.</li><br>
-            <li style="float: left; text-align: left;"><b>Webcam Integration</b>: Accessed and streamed live video input across desktop and mobile browsers.</li>
-            <li style="float: left; text-align: left;"><b>Speech Synthesis</b>: Enabled the app to audibly speak detected object names using native browser voice.</li>
-            <li style="float: left; text-align: left;"><b>Responsive Design</b>: Built a clean, touch-friendly interface optimized for mobile user.</li>
-            <li style="float: left; text-align: left;"><b>Heroku</b>: Set up Gunicorn, a Procfile, and environment configuration for seamless cloud deployment.</li>  
-          </ul>
-
-         <h5 style="float: left; padding-top: 10%;">Challenges and Solutions: </h5>
-          <br>
-         <ul> 
-            <li style="float: left; text-align: left;"><b>Challenge</b>: Running object detection without server-side Python or OpenCV</li><br>
-            <li style="float: left; text-align: left; padding-bottom: 25%"><b>Solution</b>: Switched to TensorFlow.js with a pre-trained COCO-SSD model to handle detection entirely in the browser. This eliminated latency, improved mobile performance, and required no backend inference.
-            </li><br>
-          </ul>
-
-        </div>
-
-
+        
+<!-- Card START CRM-->
 <div class="col-lg-4 col-md-6 mb-4">
   <div class="card" style="max-width: 100%;">
     
@@ -220,7 +162,7 @@ img {
       <p class="card-text" style="text-align: left;">
         This CRM features campaign scheduling and offline data collection, built for teams working both online and in the field. Test out this app in read-only mode.
       </p>
-       <a class="btn btn-primary" style="margin-right: 5%;"><s>Client-owned Project</s></a> <a href="https://crm-system-d67e808676f8.herokuapp.com/" class="btn btn-primary">Live Demo</a>
+       <a class="btn btn-primary" style="margin-right: 5%;"><s>Client-owned Project</s></a> <a href="https://crm-system.blakebrandon.tech/" class="btn btn-primary">Live Demo</a>
     </div>
   </div>
 
@@ -244,8 +186,9 @@ img {
     <li style="text-align: left;"><b>Solution</b>: Built an upload system to parse structured offline form data into the database.</li>
   </ul>
 </div>
-
-
+<!-- Card END CRM-->
+            
+<!--Card START Groove Hub-->
 <div class="col-lg-4 col-md-6 mb-4">
   <div class="card" style="max-width: 100%;">
     
@@ -274,7 +217,7 @@ img {
       <p class="card-text" style="text-align: left;">
          Groove Hub is a real-time music-sharing app where users share YouTube videos, build collaborative playlists, and watch together in sync.
       </p>
-      <a href="https://github.com/blakebrandon-hub/Groove-Hub" class="btn btn-primary" style="margin-right: 5%;">Code</a> <a href="https://groove-hub-72f8aff3a8e3.herokuapp.com/" class="btn btn-primary">Live Demo</a>
+      <a href="https://github.com/blakebrandon-hub/Groove-Hub" class="btn btn-primary" style="margin-right: 5%;">Code</a> <a href="https://groove-hub.blakebrandon.tech/" class="btn btn-primary">Live Demo</a>
     </div>
   </div>
 
@@ -297,22 +240,62 @@ img {
   <li style="text-align: left;"><b>Solution</b>: Used Flask-SocketIO events to broadcast state updates and implemented a manual resync button for users to realign playback when needed.</li>
 </ul>
 </div>
+<!--Card END Groove Hub-->
 
-          <div id="certs" style="text-align: left; padding-bottom: 7%; padding-top: 5%;">
-            <h5>Certifications</h5>
-            <ul>
-              <li><strong>AWS Cloud Practitioner</strong> – Demonstrates foundational knowledge of AWS cloud concepts, services, and solutions. Validates your understanding of core cloud technologies and architecture.</li>
-            </ul>
-            <h5>Courses</h5>
-            <ul>
-              <li><strong>Python Data Structures & Algorithms</strong> – Comprehensive course covering essential data structures and algorithmic strategies in Python, enhancing problem-solving skills.</li>
-              <li><strong>Python OOP: Object-Oriented Programming in Python</strong> – Focused on the fundamentals and practical applications of OOP, highlighting your understanding of structured programming and Python’s object-oriented capabilities.</li>
-            </ul>
-            <h5>LeetCode</h5>
-            <ul>
-              <li><strong>65+ Problems Solved</strong> – Dedicated practice in coding challenges across various topics, showcasing persistence and skill in data structures, algorithms, and problem-solving.</li>
-            </ul>
-          </div>
+<!--Card START Ongo-->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card" style="max-width: 100%;">
+    
+    <!-- Bootstrap Carousel -->
+    <div id="grooveCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static/images/ongo.jpg" class="d-block w-100 project-image" alt="Ongo Screenshot 1">
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/ongo2.jpg" class="d-block w-100 project-image" alt="Ongo Screenshot 2">
+        </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#grooveCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 50%; width: 2.5rem; height: 2.5rem;"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#grooveCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 50%; width: 2.5rem; height: 2.5rem;"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="card-body">
+      <h4 class="card-title">Ongo the Art Collector</h4>
+      <p class="card-text" style="text-align: left;">
+         AI-powered app that generates humorous art critiques and voiceovers based on uploaded images. 
+      </p>
+      <a href="https://github.com/blakebrandon-hub/Ongo" class="btn btn-primary" style="margin-right: 5%;">Code</a> <a href="https://ongo.blakebrandon.tech" class="btn btn-primary">Live Demo</a>
+    </div>
+  </div>
+
+  <br>
+
+  <h5 style="text-align: left; padding-top: 5%;">Skills Demonstrated:</h5>
+<ul style="padding-bottom: 5%;">
+  <li style="float: left; text-align: left;"><strong>Flask</strong>: Orchestrated image uploads, SSE streaming endpoints, and routing logic for real-time critique delivery.</li>
+  <li style="float: left; text-align: left;"><strong>Replicate API</strong>: Integrated GPT-4o-mini for image captioning and persona-driven critique generation.</li>
+  <li style="float: left; text-align: left;"><strong>ElevenLabs TTS</strong>: Implemented ElevenLabs streaming API to convert text critiques into lifelike audio.</li>
+  <li style="float: left; text-align: left;"><strong>JavaScript & SSE</strong>: Consumed server-sent events to render streaming text and audio cues in the browser.</li>
+  <li style="float: left; text-align: left;"><strong>Bootstrap & Responsive UI</strong>: Built a mobile-friendly interface with dynamic image previews, critique panels, and audio controls.</li>
+  <li style="float: left; text-align: left;"><strong>Pillow (PIL)</strong>: Validated and re-saved uploaded images to ensure consistent formats for downstream processing.</li>
+</ul>
+<div style="clear: both; margin-bottom: 2rem;"></div>
+
+<h5 style="text-align: left;">Challenge & Solution:</h5>
+<ul>
+  <li style="text-align: left;">
+    <b>Challenge</b>: Ensuring synchronized streaming of text and audio over SSE without blocking the UI.  
+    <b>Solution</b>: Used non-blocking event loops in Flask and the Fetch API’s ReadableStream to interleave critique text and audio events seamlessly.
+  </li>
+</ul>
+
 
 
         </div>        
